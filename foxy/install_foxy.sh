@@ -49,11 +49,11 @@ sudo apt install -y python3-colcon-common-extensions
 echo "[Environment setup and getting rosinstall]"
 sh -c "source /opt/ros/$name_ros_version/setup.bash"
 
-echo "[Initialize rosdep]"
+echo "[initialize rosdep]"
 if [ ! -e /etc/ros/rosdep/sources.list.d/20-default.list ]; then
-    sudo sh -c "rosdep init"
+    sudo sh -c "sudo rosdep init"
 fi
-rosdep update
+sudo sh -c "rosdep update"
 
 
 echo "[Set the ROS evironment]"
