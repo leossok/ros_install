@@ -14,8 +14,8 @@
 # limitations under the License.
 
 echo ""
-echo "[Note] Target OS version  >>> Ubuntu 20.04 (focal)"
-echo "[Note] Target ROS version >>> ROS 2 Noetic Ninjemys"
+echo "[Note] Target OS version  >>> Ubuntu 18.04 (bionic)"
+echo "[Note] Target ROS version >>> ROS 2 Melodic Morenia"
 echo ""
 echo "PRESS [ENTER] TO CONTINUE THE INSTALLATION"
 echo "IF YOU WANT TO CANCEL, PRESS [CTRL] + [C]"
@@ -40,17 +40,17 @@ do
     case $opt in
         "desktop-full")
             echo "Install ros-melodic-desktop-full"
-            sudo apt install ros-noetic-desktop-full
+            sudo apt install ros-melodic-desktop-full
             break
             ;;
         "desktop")
             echo "Install ros-melodic-desktop"
-            sudo apt install ros-noetic-desktop
+            sudo apt install ros-melodic-desktop
             break
             ;;
         "base")
             echo "Install ros-melodic-ros-base"
-            sudo apt install ros-noetic-ros-base
+            sudo apt install ros-melodic-ros-base
             break
             ;;
         *) echo "invalid option $REPLY";;
